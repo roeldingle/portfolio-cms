@@ -15,23 +15,23 @@ export default async function Home() {
     <main className="min-h-screen bg-slate-950 px-6 py-12 text-slate-100 sm:px-10 lg:px-16">
       <div className="mx-auto flex min-h-[calc(100vh-6rem)] max-w-5xl flex-col justify-between">
         <header className="max-w-3xl">
-          <p className="mb-6 text-sm font-medium uppercase tracking-[0.25em] text-cyan-400">
-            Developer Portfolio
+          <p className="mb-2 text-sm font-medium uppercase tracking-[0.25em] text-cyan-400">
+            Portfolio
           </p>
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
             {portfolio.name}
           </h1>
-          <ul className="mt-6 space-y-2 text-lg leading-6 text-slate-300 sm:text-xl">
+          <ul className="mt-6 space-y-1 text-md text-slate-300 sm:text-lg">
             {portfolio.roles.map((role: string) => (
               <li key={role}>{role}</li>
             ))}
           </ul>
-          <p className="mt-6 max-w-2xl text-base leading-6 text-slate-400 sm:text-lg">
+          <p className="mt-6 max-w-4xl text-base leading-6 text-slate-400 sm:text-md">
             {portfolio.description}
           </p>
         </header>
 
-        <section aria-labelledby="skills-heading" className="my-16">
+        <section aria-labelledby="skills-heading" className="my-6">
           <h2
             id="skills-heading"
             className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-400"
